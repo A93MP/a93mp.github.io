@@ -1,0 +1,131 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(17, 1, 17);
+    color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+form{
+    
+    margin: 0;
+    border-top: 2px solid salmon;
+    border-bottom: 2px solid salmon;
+    height: 85vh;
+    background-color: aliceblue;
+    color: black;
+}
+
+.parte1{
+    position: relative;
+    float: left;
+    width: 45vw;
+    top: 10%;
+    font-size: large;
+}
+.parte2{
+    position: relative;
+    float: right;
+    font-size: large;
+    width: 45vw;
+    top: 10%;
+}
+.parte1 div{
+    margin: 20px 0 20px 20px;
+    padding: 0;
+}
+.parte2 div{
+    margin: 20px 0 20px 0;
+    padding: 0;
+}
+form p{
+    color: brown;
+}
+.button{
+    position: relative;
+    top: 90%;
+    text-align: center;
+}
+input{
+    width: fit-content;
+}
+
+.header{
+    text-align: center;
+}
+
+.listaCompra{
+    display: flex;
+    flex-direction: column;
+}
+
+.listaCompra>textarea{
+    max-width: fit-content;
+}
+
+.listaSupers{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+blockquote{
+    
+    text-align: center;
+    
+}
+.nav{
+    list-style-type: none;
+}
+a{
+    color: brown;
+}
+a:link{
+    text-decoration: none;
+}
+a>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+h2,h1{
+    text-align: center;
+}
+footer{
+    color: brown;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+}
+footer img{
+    width: 25px;
+    height: 25px;
+}
+footer a{
+    position: relative;
+    top: 17px;
+    
+}
+small{
+    font-weight: thin;
+    font-size: x-small;
+    font-style: italic;
+    color: rgb(104, 102, 102);
+}
+
+
+

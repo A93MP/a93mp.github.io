@@ -1,0 +1,46 @@
+.aboutServicios{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+section{
+    flex-shrink: 1;
+    width: 50%;
+}
+
+.aboutServicios div{
+    width: 50vw;
+    margin: 15px;
+    padding: 0;
+}
+.section1{
+    
+    position:relative;
+    float: left;
+}
+
+.section2{
+    
+    position:relative;
+    float: right;
+}
+.descrip{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.videoContainer{
+    display: flex;
+    justify-content: center;
+    
+}
+  .videoContainer video{
+    position: relative;
+    width: 100%;
+    
+  }
+

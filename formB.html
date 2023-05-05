@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulario</title>
+  <link rel="stylesheet" href="estilos/estilos.css" />
+ 
+</head>
+<header>
+  <nav>
+    <ul class="nav">
+      <li><a href="inicio.html">Inicio</a></li>
+      <li><a href="formA.html">Servicio de atención personal</a></li>
+      <li><a href="formB.html">Servicio de compra a domicilio</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="about.html">Sobre nosotros</a></li>
+    </ul>
+  </nav>
+</header>
+
+<body>
+  <form method="get" action="">
+    <div class="parte1">
+      <div>
+        <label for="apellidos">Apellidos: </label>
+        <input type="text" id="apellidos" placeholder="Apellidos" name="apeliidos" title="Introduce tus apellidos"
+          required />
+      </div>
+      <div>
+        <label for="nombre">Nombre: </label>
+        <input type="text" id="nombre" placeholder="Nombre" name="nombre" title="Introduce tu nombre" required />
+      </div>
+      <div>
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" title="Introduce tu email" placeholder="form@email.com" />
+      </div>
+
+      <div>
+        <label for="fecha">Elija cuando desea recibir su compra:
+        </label>
+        <input type="date" id="fecha" name="fecha" title="Elija una fecha" /><small>Recibirá un aviso de la hora
+          aproximada de entrega a su correo o teléfono</small>
+      </div>
+
+      <div>
+        <label for="cantidad">¿Cuántos elementos desea comprar?</label>
+        <input type="number" id="cantidad" name="cantidad" min="0" max="20"
+          title="cantidad de elementos a recibir" /><small>Este servicio tiene un límite de 20 elementos</small>
+      </div>
+      <div>
+        <label for="telefono">Número de contacto: </label>
+        <input type="tel" id="telefono" name="telefono" title="Introduce tu número de contacto" required />
+      </div>
+    </div>
+    <div class="parte2">
+      <div class="listaCompra"><label for="listaCompra">Lista de la compra: </label><textarea id="listaCompra"
+          name="listaCompra" cols="50" rows="4" required></textarea><small>Recuerde el límite de 20 elementos</small>
+      </div>
+
+
+
+      <div class="listaSupers">
+        <p>Supermercados con los que trabajamos: </p>
+        <div>
+          <label for="smDia">Dia</label><input type="checkbox" id="smDia" name="supermercado" value="smDia">
+          <label for="smCarrefour">Carrefour</label><input type="checkbox" id="smCarrefour" name="supermercado"
+            value="smCarrefour">
+          <label for="smMercadona">Mercadona</label><input type="checkbox" id="smMercadona" name="supermercado"
+            value="smMercadona">
+        </div><small>Si no se elige ninguno buscaremos las mejores ofertas por ti</small>
+      </div>
+      
+    </div>
+    <div class="button">
+      <input type="submit" value="Enviar">
+    </div>
+  </form>
+  <footer>
+    <p>Vigo, Pontevedra</p>
+    <p>Copyright All rights reserved 2022-2023</p>
+    <a href="#"><img src="resources/instagram-ga150c567b_640.png" alt="instagram"></a></footer>
+</body>
+
+</html>

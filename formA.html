@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulario</title>
+  <link rel="stylesheet" href="estilos/estilos.css" />
+  
+  <header>
+    <nav>
+      <ul class="nav">
+        <li><a href="inicio.html">Inicio</a></li>
+        <li><a href="formA.html">Servicio de atención personal</a></li>
+        <li><a href="formB.html">Servicio de compra a domicilio</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="about.html">Sobre nosotros</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<body>
+  <form method="get" action="">
+    <div class="parte1">
+      <div>
+        <label for="apellidos">Apellidos: </label>
+        <input type="text" id="apellidos" placeholder="Apellidos" name="apeliidos" title="Introduce tus apellidos"
+          required />
+      </div>
+      <div>
+        <label for="nombre">Nombre: </label>
+        <input type="text" id="nombre" placeholder="Nombre" name="nombre" title="Introduce tu nombre" required />
+      </div>
+      <div>
+        <label for="email">Email: </label>
+        <input type="email" required id="email" name="email" title="Introduce tu email" placeholder="form@email.com" />
+      </div>
+      <div>
+        <label for="redes">URL de tu web o red social personal</label>
+        <input type="url" id="redes" name="url" title="Escribe la URL de tu página web personal" />
+      </div>
+      <div>
+        <label for="fecha">Elija cuando desea la cita o recibir su compra:
+        </label>
+        <input type="date" id="fecha" name="fecha" title="Elija una fecha" />
+      </div>
+      <div>
+        <label for="hora">Elija una hora para la cita: </label>
+        <input type="time" id="hora" name="hora" title="Elija una hora para la cita" min="09:00" max="20:00" /><small>No
+          hace falta elegir hora para el servicio a domicilio</small>
+      </div>
+      <div>
+        <label for="cantidad">¿Cuántos elementos desea comprar?</label>
+        <input type="number" id="cantidad" name="cantidad" min="0" max="20"
+          title="cantidad de elementos a recibir" /><small>Este servicio tiene un límite de 20 elementos o
+          prendas</small>
+      </div>
+      <div>
+        <label for="telefono">Número de contacto: </label>
+        <input type="tel" id="telefono" name="telefono" title="Introduce tu número de contacto" />
+      </div>
+    </div>
+    <div class="parte2">
+      <div>
+        <p>Sexo:</p>
+        <label for="masculino">Masculino</label><input type="radio" id="masculino" name="genre"
+          value="femenino" /><label for="femenino">Femenino</label><input type="radio" id="femenino" name="genre"
+          value="femenino" />
+        <label for="otro">Otro</label>
+        <input type="radio" id="otro" name="genre" value="otro"></input>
+      </div>
+      <div>
+        <p>Tipo de servicio: </p><label for="personal">Atención personal</label><input type="radio" id="personal"
+          name="serviceType" value="personal">
+        <label for="domicilio">A domicilio</label><input type="radio" id="domicilio" name="serviceType"
+          value="domicilio">
+      </div>
+
+
+      <div>
+        <p>Servicios adicionales: </p>
+        <label for="maquillaje">Maquillaje y/o peluquería</label><input type="checkbox" id="maquillaje"
+          name="otherService" value="maquillaje">
+        <label for="asesoria">Asesoria del saber estar</label><input type="checkbox" id="asesoria" name="otherService"
+          value="asesoria">
+        <label for="fondoArmario">Fondo de armario personalizado</label><input type="checkbox" id="fondoArmario"
+          name="otherService" value="fondoArmario">
+      </div>
+    </div>
+    <div class="button">
+      <input type="submit" value="Enviar">
+    </div>
+  </form>
+  <footer>
+    <p>Vigo, Pontevedra</p>
+    <p>Copyright All rights reserved 2022-2023</p>
+    <a href="#"><img src="resources/instagram-ga150c567b_640.png" alt="instagram"></a>
+  </footer>
+</body>
+
+</html>

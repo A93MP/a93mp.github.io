@@ -1,0 +1,18 @@
+fieldset{
+    text-align: center;
+    height: 70vh;
+    font-size: large;
+}
+fieldset div{
+    position: relative;
+    top: 10%;
+
+}
+p{
+    color: brown;
+}
+.contacto{
+    display: flex;
+    justify-content: center;
+    
+}
